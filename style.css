@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contaner{
+    background-color: antiquewhite;
+    display: flex;
+    /* flex-direction: column;
+    height: 100%; */
+    width: 500px;
+    height: 800px;
+}
+
+.input-box{
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-input{
+    background-color: aquamarine;
+    
+}
+
+.to-do-btn{
+    background-color: blueviolet;
+}
+
+.list-box{
+    background-color: aqua;
+}
+
+.listContainer{
+    background-color: red;
+}
+
+.to-do-li{
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+.to-do-li > span{
+    background-color: white;
+}
+
+
+
+

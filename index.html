@@ -4,25 +4,27 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <div class="contaner">
-      <input
+      <div class="input-box">
+        <input
         type="text"
         id="to-do-input"
         class="to-do-input"
         placeholder="Write your To-Do List"
-      />
-      <button type="button" id="to-do-btn" class="to-do-btn">
-        Add
-      </button>
+        />
+        <button id="to-do-btn" class="to-do-btn">
+          Add
+        </button>
+      </div>
+        <ul id="listContainer" class="listContainer">
+          <li class="to-do-li">Write Any Thing</li>
+          <li class="to-do-li">You already done</li>
+        </ul>
     </div>
-    <ul id="listContainer" class="listContainer">
-      <li class="to-do-li">Write Any Thing</li>
-      <li class="to-do-li">You already done</li>
-    </ul>
-    <script src="./index.mjs" type="module"></script>
+      <script src="./index.js" type="module"></script>
   </body>
 </html>
