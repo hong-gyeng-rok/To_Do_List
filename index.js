@@ -46,6 +46,7 @@ function addList() {
   const addListText = document.createTextNode(inputValue);
   
   li.appendChild(addListText);
+  li.className = "to-do-li";
 
   if (inputValue === '') {
     alert("You must write something!!!!");

@@ -6,46 +6,53 @@ body{
 
 .contaner{
     background-color: antiquewhite;
-    display: flex;
-    /* flex-direction: column;
-    height: 100%; */
     width: 500px;
-    height: 800px;
+    height: 500px;
 }
 
 .input-box{
-    background-color: black;
-    width: 300px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
 }
 
 .to-do-input{
     background-color: aquamarine;
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
     
 }
 
 .to-do-btn{
     background-color: blueviolet;
-}
-
-.list-box{
-    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
 }
 
 .listContainer{
     background-color: red;
 }
 
+.list-box{
+    background-color: aqua;
+}
+
 .to-do-li{
     background-color: aquamarine;
     margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.to-do-li > span{
+.to-do-li  span{
     background-color: white;
+    margin-right: 10px;
+    
 }
 
 
