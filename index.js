@@ -2,7 +2,7 @@ const toDoInput = document.getElementById("to-do-input");//input_class
 const toDoBtn = document.getElementById("to-do-btn");//btn_class
 const listContainer = document.getElementById("listContainer");//ul_class
 
-const listItem = document.getElementsByTagName("LI");//li_tag
+const listItem = document.getElementsByClassName("to-do-li");//li_class
 const del = document.getElementsByClassName("del");//del_calss
 
 //"X" 텍스트가 담긴 Span 생성
@@ -70,3 +70,12 @@ function addList() {
       }
     }
   }
+
+
+listItem.forEach(item => {
+  const text = item.textContent.trim();
+  const line = document.createElement('span');
+  line.className = 'line';
+  line.style.width = `${text.length * 12}px`; // 줄의 길이를 텍스트 길이에 비례하게 설정
+  item.appendChild(line);
+});
