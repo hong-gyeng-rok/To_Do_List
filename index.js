@@ -45,6 +45,7 @@ function addList() {
   const addListText = document.createTextNode(inputValue);
   
   li.appendChild(addListText);
+  li.className = "to-do-li";
 
   li.className = "to-do-li";
 
