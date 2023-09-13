@@ -1,7 +1,6 @@
 const toDoInput = document.getElementById("to-do-input");//input_class
 const toDoBtn = document.getElementById("to-do-btn");//btn_class
 const listContainer = document.getElementById("listContainer");//ul_class
-const ul = document.querySelector('ul');//ul_tag
 
 const listItem = document.getElementsByTagName("LI");//li_tag
 const del = document.getElementsByClassName("del");//del_calss
@@ -24,9 +23,9 @@ for(let i = 0; i < del.length; i++){
 }
 
 //toDoList 클릭시 체크 활성/비활성을 토글형식으로 구현
-ul.addEventListener("click", function(event){
+listContainer.addEventListener("click", function(event){
   if(event.target.tagName === "LI"){
-    event.target.classList.toggle =("checked");
+    event.target.classList.toggle("checked");
   }
 }, false);
 
@@ -46,6 +45,8 @@ function addList() {
   const addListText = document.createTextNode(inputValue);
   
   li.appendChild(addListText);
+
+  li.className = "to-do-li";
 
   if (inputValue === '') {
     alert("You must write something!!!!");
