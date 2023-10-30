@@ -1,0 +1,21 @@
+#calendar{
+    /* background-color: burlywood; */
+    min-width: 400px;
+    min-height: 500px;
+    border-radius: 30px;
+    /* border: 1px solid black; */
+    margin-left: 50px;
+}
+
+:root {
+  --fc-border-color: black;
+  --fc-daygrid-event-dot-width: 5px;
+}
+
+.fc .fc-col-header-cell-cushion {
+  display: inline-block;
+  padding: 2px 4px;
+  /* width: 400px; */
+  /* height: auto; */
+}
+

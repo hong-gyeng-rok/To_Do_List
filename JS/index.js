@@ -48,7 +48,7 @@ function addList() {
   li.className = "to-do-li";
 
   li.className = "to-do-li";
-
+// input에 아무것도 입력을 안했을 때 alret창 생성 및 input창에 입력시 새로운 todo 생성
   if (inputValue === '') {
     alert("You must write something!!!!");
   } else {
